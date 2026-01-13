@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+
+    <style>
+        /* -------- RESET -------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #111827;
+            line-height: 1.7;
+        }
+
+        /* -------- NAV BAR -------- */
+        header {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav strong {
+            font-size: 1.1rem;
+            color: #b91c1c;
+            letter-spacing: 0.4px;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #111827;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #b91c1c;
+        }
+
+        /* -------- PAGE LAYOUT -------- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        /* -------- HERO -------- */
+        .hero {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 720px;
+            color: #374151;
+        }
+
+        /* -------- SECTIONS -------- */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid #b91c1c;
+            padding-left: 0.75rem;
+        }
+
+        .block {
+            margin-left: 1.2rem;
+            max-width: 800px;
+        }
+
+        .block p {
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+
+        .project {
+            margin-bottom: 1.2rem;
+        }
+
+        .project strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* -------- FOOTER -------- */
+        footer {
+            border-top: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        /* -------- RESPONSIVE -------- */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin-left: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <strong>Personal Profile</strong>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Thien Truong</h1>
+        <p>
+            University of California, Irvine. Interests include software
+            engineering, data analysis, probability, and systems-level programming.
+        </p>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About</h2>
+        <div class="block">
+            <p>
+                I am a Computer Engineering student focused on building reliable
+                software systems and applying mathematical reasoning to real-world
+                data. My coursework and projects emphasize C programming, Python,
+                probability, statistics, and foundational machine learning.
+            </p>
+            <p>
+                I am currently developing a technical portfolio oriented toward
+                software engineering, data analysis, and research-driven roles.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="block">
+
+            <div class="project">
+                <strong>Diabetes Readmission Risk Modeling</strong>
+                <p>
+                    Built a supervised learning pipeline using structured EHR data to
+                    predict 30-day hospital readmissions, addressing class imbalance
+                    and evaluating performance with ROC-AUC.
+                </p>
+            </div>
+
+            <div class="project">
+                <strong>NBA Three-Point Analytics</strong>
+                <p>
+                    Analyzed team-level three-point shooting volume and efficiency
+                    using Python and Pandas, exploring statistical relationships with
+                    team performance.
+                </p>
+            </div>
+
+            <div class="project">
+                <strong>Low-Level Programming & Systems Coursework</strong>
+                <p>
+                    Experience with C programming, digital logic, and algorithmic
+                    problem solving through coursework and independent projects.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="block">
+            <p>
+                Email: tt7uong@gmail.com<br />
+                GitHub: <a href="https://github.com/thtr-code/thtr-code" target="_blank">
+                github.com/thtr-code/thtr-code
+            </a><br />
+                LinkedIn: //
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026
+</footer>
+
+</body>
+</html>
