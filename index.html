@@ -104,12 +104,28 @@
         }
 
         .project {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
 
         .project strong {
             display: block;
             margin-bottom: 0.25rem;
+        }
+
+        .project-links {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-links a {
+            color: #6b7280;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .project-links a:hover {
+            color: #b91c1c;
         }
 
         /* -------- FOOTER -------- */
@@ -182,34 +198,40 @@
         <div class="block">
 
             <div class="project">
-                <strong>Diabetes Readmission Risk Modeling</strong>
+                <strong>Physics Simulation (C++)</strong>
+                <div class="project-links">
+                    <a href="https://github.com/thtr-code/PhysicsSimCPP" target="_blank">GitHub</a>
+                </div>
                 <p>
-                    Built a supervised learning pipeline using structured EHR data to
-                    predict 30-day hospital readmissions, addressing class imbalance
-                    and evaluating performance with ROC-AUC.
+                    Built a physics simulation engine in C++ demonstrating kinematics,
+                    collision response, and numerical integration.
                 </p>
             </div>
 
             <div class="project">
-                <strong>NBA Three-Point Analytics</strong>
+                <strong>Diabetes Readmission SQLite Analysis</strong>
+                <div class="project-links">
+                    <a href="https://github.com/thtr-code/diabetes-readmission-SQLite" target="_blank">GitHub</a>
+                </div>
                 <p>
-                    Analyzed team-level three-point shooting volume and efficiency
-                    using Python and Pandas, exploring statistical relationships with
-                    team performance.
+                    Explored hospital readmission patterns using SQL on structured
+                    clinical data; built queries to quantify risk factors.
                 </p>
             </div>
 
             <div class="project">
-                <strong>Low-Level Programming & Systems Coursework</strong>
+                <strong>NBA Three-Point Analytics (Pandas)</strong>
+                <div class="project-links">
+                    <a href="https://github.com/thtr-code/pandas-nba-3pt-analysis" target="_blank">GitHub</a>
+                </div>
                 <p>
-                    Experience with C programming, digital logic, and algorithmic
-                    problem solving through coursework and independent projects.
+                    Analyzed three-point shooting volume and efficiency using
+                    Python and Pandas, identifying trends across seasons and teams.
                 </p>
             </div>
 
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section id="contact">
@@ -219,8 +241,8 @@
                 Email:
                 <a href="mailto:tt7uong@gmail.com">tt7uong@gmail.com</a><br />
                 GitHub:
-                <a href="https://github.com/thtr-code/thtr-code" target="_blank">
-                    github.com/thtr-code/thtr-code
+                <a href="https://github.com/thtr-code" target="_blank">
+                    github.com/thtr-code
                 </a><br />
                 LinkedIn:
                 <a href="https://www.linkedin.com/in/thien-truong-916bab262/" target="_blank">
